@@ -2,5 +2,5 @@
 (https://stackoverflow.com/questions/45351672/maven-war-packaging-with-value-war-is-invalid-aggregator-projects-require)
 So rest module has additional war packaging
 
-2.To run project on non default profile use:
+2. To run project on non default profile use:
 mvn packaging -P production
