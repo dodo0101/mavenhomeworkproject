@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="hwepam.war">
+    <root id="archive" name="hwmaven.war">
       <element id="artifact" artifact-name="mavenhomeworkproject:war exploded" />
     </root>
   </artifact>

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="mavenhomeworkproject:war exploded">
-    <output-path>$PROJECT_DIR$/target/hwepam</output-path>
+    <output-path>$PROJECT_DIR$/target/hwmaven</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -13,9 +13,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="mavenhomeworkproject" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.0" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/hwepam/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/hwmaven/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="mavenhomeworkproject/web/Web" />
     </root>
