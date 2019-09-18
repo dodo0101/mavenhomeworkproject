@@ -4,11 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>mavenhomeworkproject</groupId>
-  <artifactId>mavenhomeworkproject</artifactId>
-  <version>1</version>
+  <groupId>mavenhomeworkproject</groupId><!-- name of organization com... -->
+  <artifactId>mavenhomeworkproject</artifactId><!-- name of project -->
+  <version>1</version><!-- project version -->
+  <packaging>war</packaging><!-- type of project package -->
 
-  <name>mavenhomeworkproject</name>
+  <name>maven.homework.project</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -28,6 +29,16 @@
   </dependencies>
 
   <build>
+    <finalName>hwepam</finalName>
+    <outputDirectory>target2</outputDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
+    <sourceDirectory>${basedir}/src/main/java</sourceDirectory> <!-- optional thing - changing of source: to work correct on different OS -->
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -72,4 +83,5 @@
       </plugins>
     </pluginManagement>
   </build>
+
 </project>
